@@ -1,0 +1,365 @@
+/* Custom CSS
+
+ *
+ * Copyright (C) <2015> <Ismael Rodríguez Hernández>
+ * All rights reserved.
+ *
+ * This software may be modified and distributed under the terms
+ * of the BSD license.  See the LICENSE file for details.
+
+*/
+.tituloEvento{
+overflow: initial;
+    white-space: initial;
+}
+
+.tituloLista{
+    overflow: initial;
+    white-space: initial;
+    font-size:100%;
+    color:#022e14;
+    font-weight:bold;
+}
+.horaLista{
+    overflow: initial;
+    white-space: initial;
+    font-size:87%;
+}
+
+.horaDescripcion{
+    overflow: initial;
+    white-space: initial;
+    font-size:105%;
+
+}
+
+.tituloDescripcion{
+    overflow: initial;
+    white-space: initial;
+    font-size:105%;
+    font-weight:bold;
+
+
+}
+
+@media screen and (max-width: 400px) {
+.tituloLista{
+    overflow: initial;
+    white-space: initial;
+    font-size:85%;
+    font-weight:bold;
+
+
+}
+.horaLista{
+    overflow: initial;
+    white-space: initial;
+    font-size:77%;
+}
+
+
+.horaDescripcion{
+    overflow: initial;
+    white-space: initial;
+    font-size:90%;
+
+}
+    .tituloDescripcion{
+        overflow: initial;
+        white-space: initial;
+        font-size:97%;
+        font-weight:bold;
+
+
+    }
+
+}
+
+.textoInfo{
+    overflow: initial;
+    white-space: initial;
+    font-size:100%;
+}
+
+.colorSanLorenzo{
+    background-color:#00722d !important;
+ }
+
+.colorSanLorenzo.activated {
+    background-color:#25b725 !important;
+}
+
+.littleDay{
+	font-size:70%;
+}
+.categoryLabel{
+	font-size:80%;
+}
+.button-day {
+    line-height: 1em;
+
+}
+
+.card .item-text-wrap{
+    background:rgba(255,255,255,0.95);
+}
+
+.left-image{
+    max-width:100%;
+    max-height:70px;
+}
+
+
+
+.right-back-image{
+    max-width:100%;
+    max-height:100px;
+    float: right;
+    z-index:-1;
+}
+
+.item-back{
+  background-repeat: no-repeat;
+  background-position: right;
+  height:100%;
+}
+
+
+
+
+.elemento-lista-eventos  {
+    overflow: inherit ;
+    text-overflow: inherit ;
+    white-space: normal ;
+    padding:0px;
+
+}
+
+
+.fav-star-central {
+    max-width: 20px;
+    padding-top:8px;
+    padding-bottom:0px;
+    margin-top:0px;
+
+}
+.fav-star {
+    max-width: 73px;
+    max-height:38px;
+    float: right;
+    border:10px;
+
+}
+
+.fav-star-left{
+    max-width: 35px;
+    float:left;
+}
+
+.fav-text{
+    font-size: 140%;
+    overflow: initial;
+    white-space: initial;
+}
+
+
+.item-trns {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    color: red;
+
+}
+
+.fav-button{
+    max-height:10px;
+    padding-top: 0px;
+
+}
+
+
+.main-list-item{
+
+  height: 50px;
+  font-size:100%;
+  font-weight:bold;
+  text-align: center;
+    background:rgba(255,255,255,0.95);
+}
+
+
+.main-list-line{
+ height: 3px;
+ border: 0;
+background-color: #f00;
+}
+
+.search {
+    transition: 0.09s all linear;
+}
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+
+
+.main-background {
+    background: url(../img/guide.jpg);
+    background-position: left top; /*Positioning*/
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+
+}
+.guide-background {
+  background: url(../img/albahaca.png);
+   background-position: right bottom; /*Positioning*/
+   background-repeat: no-repeat;
+
+}
+
+.description-background {
+  background-image: url(../img/albahaca.png);
+   background-position: right bottom; /*Positioning*/
+   background-repeat: no-repeat;
+}
+
+.my-content {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.my-list {
+    list-style: none;
+    font-size: 25px;
+    line-height: 62px;
+}
+
+.my-item, .my-item-divider {
+    height: 62px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.my-item-divider {
+    background-color: #eee;
+}
+
+body .overflow-scroll {
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.footer {
+    position:fixed;
+    width:100%;
+    bottom:207px;
+    height:0px;
+}
+
+.element {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.semi-transparent{
+    background:rgba(255,255,255,0.95);
+}
+
+.boton-filtro{
+    font-size:120% !important;
+    padding-left:5px !important;
+    padding-right:5px !important;
+    padding-top:0px !important;
+    margin: 0px !important;
+}
+
+.boton-subir{
+    font-size:100% !important;
+    padding-left:5px !important;
+    padding-right:5px !important;
+    padding-top:0px !important;
+    margin: 0px !important;
+}
+
+.tituloDia{
+    text-align: center;
+    font-weight:bold;
+    font-size:130%;
+
+}
+
+.imagenInfo{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    max-width:100%;
+
+}
+
+.barraBusqueda{
+    background-color:#d6f8d6 !important;
+
+
+}
+
+.letraNegra{
+    color:black !important;
+}
+
+.textoPersonas{
+  color:black;
+  width:100%;
+  text-align:center;
+}
+
+.div-dia{
+  padding:3px;
+
+}
+
+.button-dia{
+  width:100%;
+  border-color: #00722d !important;
+  background-color: white !important;
+}
+
+.button-dia span{
+color:black;
+
+
+
+
+}
+.button-dia.active {
+font-style: bold !important;
+background-color: #00c800 !important;
+
+}
+
+
+.adelanto-button{
+  border-color: #71c0f8 !important;
+  background-color: white !important;
+}
+
+.adelanto-button span{
+  color: black;
+}
+
+.adelanto-button.active{
+  background-color: #a8dbff !important;
+}

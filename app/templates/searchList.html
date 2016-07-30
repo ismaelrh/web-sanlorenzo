@@ -1,0 +1,58 @@
+<!--
+Vista de resultados de búsqueda.
+-->
+<ion-view view-title='Búsqueda'>
+  <ion-nav-bar class="bar-balanced colorSanLorenzo ">
+
+
+
+    <ion-nav-buttons side="left">
+    </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+      </ion-nav-buttons>
+
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+  </ion-nav-bar>
+    <ion-content class="description-background">
+        <div class="card" ng-show="hayResultados()">
+            <div class="item item-text-wrap" style="text-align:center;">
+                <span ng-if="numberOfResults==1">{{numberOfResults}} resultado de "{{term}}"</span>
+                <span ng-if="numberOfResults>1">{{numberOfResults}} resultados de "{{term}}"</span>
+            </div>
+        </div>
+
+        <ion-list ng-show="hayResultados()">
+            <!-- Importante, el array events debe estar ordenado -->
+
+
+                <!-- Listado de eventos de ese día -->
+                <div collection-repeat="event in all()" class="item elemento-lista-eventos" ng-click="displayEvent(event.id)">
+
+                    <div class="row">
+                        <div class="col col-20"><img src="img/{{event.category}}.png" class="left-image"></div>
+                        <div class="col">
+                            <div>
+                                <!--<img class="fav-star" ng-src="img/fav-{{isFav(event.id)}}.png"
+                                     ng-click="toggleFav(event.id); $event.stopPropagation();">-->
+                            </div>
+                            <span class="tituloLista">{{event.title}}</span>
+                            <br/>
+                            <span class="horaLista"><span class="icon ion-calendar"></span>   Día {{event.day}} - {{event.hour}}</span>
+                            <br/><span class="horaLista"><span class="icon ion-location"></span>   {{event.place_text}}</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </ion-list>
+        <div class="card" ng-hide="hayResultados()">
+            <div class="item item-text-wrap">
+                No hay resultados para la búsqueda de "{{term}}"
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
